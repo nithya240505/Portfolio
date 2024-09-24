@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="st.css">
+<div id="header">
+    <div class="container">
+      <nav>
+          <img src="n.png" class="logo">
+          <ul>
+              <li><a href="in.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+     
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pro.jpg" >
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                <p>I am 3rd year engineering student at velalar college of engineering and technology</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('personal')">Personal</p>
+                    </div>
+                    <div class="tab-contents active-tab"id="skills">
+                        <ul>
+                            <li>
+                                <span>
+                                    HTML <br>
+                                    <li><span>CSS</span></li>
+                                    <li><span>JAVA</span></li>
+                                    <li><span>C PROGRAMMING</span></li>
+                                    <li><span>PYTHON</span></li>
+                                </ul>
+                                </div>
+                                <div class="tab-contents active-tab"id="personal">
+                                    <ul>                                                                                                              
+                                                <li>Name: <span>E.Nithya Shree</span></li>
+                                                <li>Age:<span>19</span></li>
+                                                <li>Education: <span>3<sup>rd</sup> year</span></li>
+                                                <li>Father's Name: <span>A.Elango</span></li>
+                                            </ul>
+                                            </div>
+                                <div class="tab-contents"id="experience">
+                                    <ul>
+                                                <li><span>PROJECT ON HTML</span></li>
+                                                <li><span>COURSE ON JAVA</span></li>
+                                            </ul>
+                                            </div>
+                                            <div class="tab-contents"id="education">
+                                                <ul>
+                                                            <li><span>COURSES ON HTML</span></li>
+                                                            <li><span>COUSES ON  JAVA</span></li>
+                                                            <li><span>COURSES ON C PROGRAMMING</span></li>
+                                                            <li><span>COUSES ON PYTHON</span></li>
+                                
+            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       </script> 
